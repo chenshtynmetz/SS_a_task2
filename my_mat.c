@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include "my_mat.h"
-#define SIZE 3
+#define SIZE 10
 
 
 int matrix[SIZE][SIZE];
