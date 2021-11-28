@@ -23,10 +23,10 @@ void have_trial(){
     int j;
     scanf("%d%d", &i ,&j);
     if(matrix[i][j] == 0) {
-        printf("False");
+        printf("False\n");
         // return 0;
     }
-    printf("True");
+    printf("True\n");
     // return 1;
 }
 
