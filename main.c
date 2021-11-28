@@ -14,5 +14,5 @@
          }
         scanf("%c", &input); 
      }
-     return 1;
+     return 0;
  }
