@@ -5,11 +5,13 @@
      scanf("%c", &input);
      while(input != 'D'){
          if(input == 'A')
-             make_matrix(); 
+             make_matrix();
          if(input == 'B')
             have_trial();
-         if(input == 'C')
+         if(input == 'C'){
             short_trial();
+            printf("\n");
+         }
         scanf("%c", &input); 
      }
      return 1;

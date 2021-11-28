@@ -23,10 +23,10 @@ void have_trial(){
     int j;
     scanf("%d%d", &i ,&j);
     if(matrix[i][j] == 0) {
-        printf("False\n");
+        printf("False");
         // return 0;
     }
-    printf("True\n");
+    printf("True");
     // return 1;
 }
 
@@ -34,7 +34,7 @@ void short_trial(){
     int i, j;
     scanf("%d%d", &i , &j);
     if(matrix[i][j] == 0){
-        printf("-1\n");
+        printf("-1");
     }
     else{
         for(int k=0; k<SIZE; k++){
@@ -44,7 +44,7 @@ void short_trial(){
                 }
             }
         }
-            printf("%d\n", (matrix[i][j]));
+            printf("%d", (matrix[i][j]));
     }
 }
 
