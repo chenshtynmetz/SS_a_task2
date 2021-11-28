@@ -26,7 +26,9 @@ void have_trial(){
         printf("False\n");
         // return 0;
     }
+    else{
     printf("True\n");
+    }
     // return 1;
 }
 
@@ -40,13 +42,16 @@ void short_trial(){
         for(int k=0; k<SIZE; k++){
             for(int h=0; h<SIZE; h++){
                 for(int r=0; r<SIZE; r++){
+                    if(matrix[h][r] != 0 && matrix[h][k] != 0 && matrix[k][r] != 0){
                     matrix[h][r] = find_minimum((int)(matrix[h][r]), (int)(matrix[h][k] + matrix[k][r]));
                 }
+            }
             }
         }
             printf("%d\n", (matrix[i][j]));
     }
 }
+
 
 // void main(){
 //     make_matrix();
