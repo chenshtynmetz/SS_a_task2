@@ -34,7 +34,7 @@ void short_trial(){
     int i, j;
     scanf("%d%d", &i , &j);
     if(matrix[i][j] == 0){
-        printf("-1");
+        printf("-1\n");
     }
     else{
         for(int k=0; k<SIZE; k++){
@@ -44,7 +44,7 @@ void short_trial(){
                 }
             }
         }
-            printf("%d", (matrix[i][j]));
+            printf("%d\n", (matrix[i][j]));
     }
 }
 

@@ -10,7 +10,7 @@
             have_trial();
          if(input == 'C'){
             short_trial();
-            printf("\n");
+            // printf("\n");
          }
         scanf("%c", &input); 
      }
