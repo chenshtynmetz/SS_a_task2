@@ -61,7 +61,9 @@ int short_trial(){
         for(int k=0; k<SIZE; k++){
             for(int h=0; h<SIZE; h++){
                 for(int r=0; r<SIZE; r++){
-                    if(h == r) continue;
+                    if(h == r) {
+                        continue;
+                    }
                     if(copy_mat[h][k] != 0 && copy_mat[k][r] != 0){
                         if(copy_mat[h][r] == 0 || copy_mat[h][r] > (copy_mat[h][k] + copy_mat[k][r]))
                         // copy_mat[h][r] = find_minimum((int)(copy_mat[h][r]), (int)(copy_mat[h][k] + copy_mat[k][r]));
@@ -106,6 +108,10 @@ void have_trial(){
     // else{
     // printf("True\n");
     // }
+    if(i == j) {
+        printf("False\n");
+        return;
+    }
     if(matrix[i][j] == 0 ){
         if(have_short == 0){
         int ans = short_trial();
@@ -118,11 +124,12 @@ void have_trial(){
         }
     }
         else if(have_short == 1){
-            printf("False\n");
+              printf("False\n");
+    }
     }
     else{
             printf("True\n");
     }
 
-}
+
 }
