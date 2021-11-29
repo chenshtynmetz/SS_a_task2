@@ -9,7 +9,7 @@
          if(input == 'B')
             have_trial();
          if(input == 'C'){
-            short_trial();
+            print_short_trial();
          }
         scanf("%c", &input); 
      }

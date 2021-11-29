@@ -5,4 +5,5 @@ int find_minimum(int a, int b);
 //this function return if have trial between 2 קודקודים
 void have_trial();
 //this function return the short trial between 2 קודקודים
-void short_trial();
+int short_trial();
+void print_short_trial();
